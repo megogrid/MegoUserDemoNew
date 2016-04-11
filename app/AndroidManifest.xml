@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package=" com.megogrid.meuser"
+    android:versionCode="4"
+    android:versionName="1.0.3">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    //App Permissions
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    //Mego User
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <!-- <uses-permission android:name="android.permission.CALL_PRIVILEGED"></uses-permission>-->
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/megoproic"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+        tools:replace="icon, theme">
+
+        <activity
+            android:name="com.megogrid.meuser.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.megogrid.meuser.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.megogrid.meuser.Help"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.megogrid.meuser.SharePrefTesting"
+            android:screenOrientation="portrait" />
+      <!--  <activity
+            android:name="com.megogrid.meuser.ConnectActivity"
+            android:screenOrientation="portrait" />
+        <activity-->
+            android:name="com.megogrid.meuser.SavedData"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.megogrid.meuser.PhotoActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- // meuser -->
+
+        <!-- <activity
+             android:name="com.megogrid.activities.themea.MegoUserARegister"
+             android:configChanges="orientation"
+             android:theme="@style/meuser_TransparentTheme" />
+         <activity
+             android:name="com.megogrid.activities.themea.MegoUserALoginn"
+             android:configChanges="orientation"
+             android:theme="@style/meuser_TransparentTheme" />
+         <activity
+             android:name="com.megogrid.activities.themea.MegoUserAForgot"
+             android:configChanges="orientation"
+             android:theme="@style/meuser_TransparentTheme" />
+         <activity
+             android:name="com.megogrid.activities.themea.MegoUserASetPass"
+             android:configChanges="orientation"
+             android:theme="@style/meuser_TransparentTheme" />-->
+        <!--ThemeA-->
+
+
+        <activity
+            android:name="com.megogrid.activities.themea.MegoUserARegistration"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themea.MegoUserASetPassword"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themea.MegoUserALogin"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themea.MegoUserAForgotPassword"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themea.MegoUserASmsVerification"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+
+
+        <!--ThemeB-->
+
+
+        <activity
+            android:name="com.megogrid.activities.themeb.MegoUserBMainPage"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themeb.MegoUserBSignup"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themeb.MegoUserBSignIn"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themeb.MegoUserBForgotPass"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themeb.MegoUserBSmsVerification"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+
+
+        <!--ThemeC-->
+
+
+        <activity
+            android:name="com.megogrid.activities.themec.MegouserCMain"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themec.MegouserCSignup"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themec.MegouserCLogin"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themec.MegouserCForgetpassword"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+        <activity
+            android:name="com.megogrid.activities.themec.MegoUserCSmsVerification"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+
+
+        <activity
+            android:name="com.megogrid.activities.ProfileSetup"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+
+        <activity
+            android:name="com.megogrid.activities.MegoUserEmailReVerification"
+            android:configChanges="orientation"
+            android:theme="@style/meuser_TransparentTheme" />
+
+        <!--Facebook-->
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.WebDialogTheme"
+            android:resource="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!--Google-->
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="278504ade0548e5bfd9bc28d1f30ef071227bf6b" />
+
+
+        <!--  <service android:name="com.megogrid.activities.MegoUser_BackupServiceupService" />-->
+
+        <service android:name="com.megogrid.activities.MegoUser_BackupService" />
+
+
+        <receiver
+            android:name="com.megogrid.activities.SMSReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

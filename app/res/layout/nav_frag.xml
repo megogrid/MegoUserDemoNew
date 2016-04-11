@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/drawer_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#E1E1E1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selected"
+                    android:drawableLeft="@drawable/user11"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:text="MePro"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_account"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Account"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+
+            <TextView
+                android:id="@+id/filebackup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_file_backup"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="File Backup"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+            <TextView
+                android:id="@+id/filerestore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_file_restore"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="File Restore"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+            <TextView
+                android:id="@+id/Prefbackup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_pref_backup"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Pref Backup"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+
+            <TextView
+                android:id="@+id/Prefrestore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_pref_store"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Pref Restore"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+
+            <TextView
+                android:id="@+id/Configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/configuration"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Configuration"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_delete"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Delete"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/backuphistory"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Backup History"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color" />
+
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_help"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Help"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/iv_logout_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_grey_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selected"
+                android:clickable="true"
+                android:drawableLeft="@drawable/drawer_logout"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:text="Logout"
+                android:textColor="@color/drawer_text"
+                android:textSize="20dp"
+                android:visibility="gone" />
+            <!--
+    <TextView
+            android:id="@+id/txt_aboutcompany"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="12dp"
+             android:paddingBottom="12dp"
+             android:drawableLeft="@drawable/about_company"
+             android:drawablePadding="20dp"
+              android:clickable="true"
+             android:background="@drawable/list_selected"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp"
+             android:paddingRight="12dp"
+             android:text="About Company"/>
+        <TextView
+            android:id="@+id/txtaboutproduct"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/padding_top_bottom"
+             android:paddingBottom="@dimen/padding_top_bottom"
+             android:drawableLeft="@drawable/about_product"
+             android:drawablePadding="20dp"
+              android:clickable="true"
+             android:background="@drawable/list_selected"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp"
+             android:paddingRight="12dp"
+             android:text="About Product"/>
+        <TextView
+            android:id="@+id/txtfeedback"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/padding_top_bottom"
+             android:paddingBottom="@dimen/padding_top_bottom"
+             android:drawableLeft="@drawable/feedback"
+             android:drawablePadding="20dp"
+              android:clickable="true"
+             android:background="@drawable/list_selected"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp"
+             android:paddingRight="12dp"
+             android:text="Feedback"/>
+        <TextView
+            android:id="@+id/txtshare"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/padding_top_bottom"
+             android:paddingBottom="@dimen/padding_top_bottom"
+             android:drawableLeft="@drawable/share"
+             android:drawablePadding="20dp"
+              android:clickable="true"
+             android:background="@drawable/list_selected"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp"
+             android:paddingRight="12dp"
+             android:text="Share"/>
+        <TextView
+            android:id="@+id/txtupdate"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/padding_top_bottom"
+             android:paddingBottom="@dimen/padding_top_bottom"
+             android:drawableLeft="@drawable/update_app"
+             android:drawablePadding="20dp"
+              android:clickable="true"
+             android:background="@drawable/list_selected"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp"
+             android:paddingRight="12dp"
+             android:text="Update App"/>
+        <TextView
+            android:id="@+id/moreApp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/padding_top_bottom"
+             android:paddingBottom="@dimen/padding_top_bottom"
+             android:drawableLeft="@drawable/more_wallpaper"
+             android:drawablePadding="20dp"
+              android:clickable="true"
+             android:background="@drawable/list_selected"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp"
+             android:paddingRight="12dp"
+             android:text="More App"/>
+            
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/txtlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/like"
+            android:layout_marginTop="10dp"
+			android:layout_gravity="center_horizontal"
+            android:drawablePadding="14dp"
+            android:gravity="center_vertical"
+            android:text="Like Us On" />
+        
+    </LinearLayout>
+  
+    <LinearLayout
+        android:layout_below="@+id/L1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       	android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+       >
+
+        <ImageView
+            android:id="@+id/imageviewer_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickFacebook"
+            android:padding="4dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+             android:id="@+id/imageviewer_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClickGooglePlus"
+            android:padding="4dp"
+            android:src="@drawable/google" />
+
+        <ImageView
+             android:id="@+id/imageviewer_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClickTwitter"
+            android:padding="4dp"
+            android:src="@drawable/twitter" />
+            -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

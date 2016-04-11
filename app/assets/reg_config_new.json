@@ -1,0 +1,226 @@
+{
+  "status": "0",
+  "details": {
+    "basic": {
+      "choosechannels": {
+        "facebook": "1",
+        "google": "1",
+        "email": "1"
+      },
+      "general_prompt": {
+        "name": "Diabetes Tracker me user",
+        "verify_no": "1",
+        "app_type": "both",
+        "reg_type": "optional",
+        "reg_mode": "email",
+        "theme": "theme3"
+      },
+      "choosefields": {
+        "firstname": "1",
+        "lasttname": "1",
+        "age": "0",
+        "gender": "1",
+        "birthday": "1",
+        "profilepic": "1",
+        "phoneno": "1",
+        "address": {
+          "isenabled": "1",
+          "addressline1": "1",
+          "addressline2": "1",
+          "city": "1",
+          "state": "1",
+          "country": "1",
+          "postalcode": "1"
+        },
+        "relationship": "1",
+        "anniversary": "1",
+        "custom_fields": {
+          "isenabled": "1",
+          "deeplink": "customProfile",
+          "values": [
+            {
+              "name": "weight",
+              "id": "WEI123",
+              "units": [
+                "kg",
+                "gm"
+              ]
+            },
+            {
+              "name": "height",
+              "id": "HEI123",
+              "units": [
+                "inch",
+                "cm"
+              ]
+            }
+          ]
+        }
+      },
+      "advance": {
+        "terms_condition": {
+          "isenabled": "1",
+          "terms_val": ""
+        },
+        "privacy": {
+          "isenabled": "1",
+          "privacy_val": ""
+        },
+        "news": {
+          "isenabled": "1"
+        }
+      },
+      "general": {
+        "showpassword": "0",
+        "rememberpassword": "1"
+      }
+    },
+    "prompt": {
+      "auto_prompt": {
+        "isenabled": "0"
+      },
+      "required_registration_prompts": {
+        "isenabled": "1",
+        "once": "1",
+        "more": {
+          "isenabled": "1",
+          "morecount": [
+            {
+              "startday": "1",
+              "counts": [
+                "1",
+                "3",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "startday": "2",
+              "counts": [
+                "2",
+                "3"
+              ]
+            },
+            {
+              "startday": "3",
+              "counts": [
+                "1",
+                "2"
+              ]
+            },
+            {
+              "startday": "4",
+              "counts": [
+                "2"
+              ]
+            },
+            {
+              "startday": "4",
+              "counts": [
+                "2"
+              ]
+            }
+          ]
+        },
+        "limit": {
+          "isenabled": "1",
+          "userskip": {
+            "isenabled": "0",
+            "times": "0"
+          },
+          "notshowmore": {
+            "isenabled": "1",
+            "maxPromptCount": "4",
+            "maxPromptDays": "2"
+          }
+        }
+      },
+      "custom": {
+        "isenabled": "1",
+        "menu": {
+          "boxid": "TJQN3KBT1",
+          "boxtitle": "DT_Menu1"
+        },
+        "header": {
+          "boxid": "EPO0IGB1Z",
+          "boxtitle": "DT_Header1"
+        },
+        "appevent": [
+          {
+            "type": "standard",
+            "boxtitle": "Glucometer",
+            "boxid": "8PZZA8FRG"
+          },
+          {
+            "type": "standard",
+            "boxtitle": "Reminder",
+            "boxid": "J5X9H5M4X"
+          },
+          {
+            "type": "standard",
+            "boxtitle": "Expenses",
+            "boxid": "ESJP6A3XN"
+          }
+        ]
+      }
+    },
+    "login": {
+      "loginrequirment": {
+        "isenabled": "1",
+        "onetime": "0",
+        "onetime_recovery": "0",
+        "everyTime": "1",
+        "everytime_recovery": "1",
+        "relaxtime": "1",
+        "relaxtime_val": "5"
+      },
+      "requiremultilogin": {
+        "isenabled": "1",
+        "logoutsession": "0",
+        "multisession": "0",
+        "device": "1"
+      }
+    },
+    "reverification": {
+      "isenabled": "1",
+      "verification": "1",
+      "time": "2"
+    },
+    "verification": {
+      "email_verification": {
+        "isenabled": "1",
+        "verification": "1"
+      }
+    },
+    "appData": {
+      "isenabled": "1",
+      "version": "5",
+      "size": 102400
+    },
+    "advance_options": {
+      "isenabled": "1",
+      "data": [
+        {
+          "boxid": "YGX254",
+          "title": "hangout",
+          "required": [
+            "WEI123",
+            "HEI123",
+            "PHON123"
+          ],
+          "placement": "custom",
+          "deep": "url"
+        },
+        {
+          "boxid": "GTH693",
+          "title": "hangout",
+          "required": [
+            "HEI123"
+          ],
+          "placement": "profile",
+          "deep": "url"
+        }
+      ]
+    }
+  }
+}
